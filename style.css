@@ -1,0 +1,155 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Esti
+los generales */
+body {
+    font-family: 'Arial', sans-serif; /* Fuente elegante */
+    background-color: #f8f8f8; /* Fondo suave */
+    color: #333; /* Color de texto oscuro */
+    margin: 0;
+  
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.app-wrapper {
+    width: 100%;
+    max-width: 600px; /* Ajusta el ancho máximo según tus necesidades */
+    margin: 0 auto; 
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+  }
+  
+  input[type="text"] {
+    width: calc(100% - 22px); /* Ajusta el ancho para el padding */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #007bff; /* Color principal */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Transición suave */
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Color al pasar el mouse */
+    transform: scale(1.1);
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los botones se ajusten a varias líneas */
+  }
+  
+  #result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    height: 30px;
+  }
+
+  #resetButton {
+    background-color: red;
+  }
+
+
+  /* Responsive */
+
+  /* Media queries para diferentes tamaños de pantalla */
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .container {
+      padding: 20px; /* Reduce el padding en pantallas pequeñas */
+    }
+  
+    .app-wrapper {
+      max-width: 90%; /* Ajusta el ancho máximo para pantallas pequeñas */
+    }
+  
+    .buttons {
+      flex-direction: column; /* Apila los botones verticalmente */
+      align-items: center; /* Centra los botones horizontalmente */
+    }
+  
+    button {
+      width: 100%; /* Hace que los botones ocupen todo el ancho */
+      margin-bottom: 10px; /* Agrega un margen inferior a los botones */
+    }
+  }
+  
+  /* Para pantallas medianas (tablets) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+      padding: 25px; /* Ajusta el padding para pantallas medianas */
+    }
+  
+    .app-wrapper {
+      max-width: 80%; /* Ajusta el ancho máximo para pantallas medianas */
+    }
+  
+    .buttons {
+      flex-wrap: wrap; /* Permite que los botones se ajusten a varias líneas */
+      justify-content: space-around; /* Distribuye los botones con espacio alrededor */
+    }
+  
+    button {
+      width: auto; /* Restaura el ancho automático de los botones */
+      margin: 5px; /* Ajusta el margen de los botones */
+    }
+  }
+  
+  /* Para pantallas grandes (escritorio) */
+  @media (min-width: 1025px) {
+    .container {
+      padding: 30px; /* Restaura el padding original */
+    }
+  
+    .app-wrapper {
+      max-width: 600px; /* Restaura el ancho máximo original */
+    }
+  
+    .buttons {
+      flex-wrap: wrap; /* Permite que los botones se ajusten a varias líneas */
+      justify-content: center; /* Centra los botones horizontalmente */
+    }
+  
+    button {
+      width: auto; /* Restaura el ancho automático de los botones */
+      margin: 5px; /* Ajusta el margen de los botones */
+    }
+  }
+  
+  
